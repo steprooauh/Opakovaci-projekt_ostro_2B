@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootswatch/dist/sandstone/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="node_modules/flag-icons/css/flag-icons.min.css">
+    <title>Jídelna Tlumačov</title>
+    <link rel="icon" href="img/image.png">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"
+                style="font-weight: bold; background-color: rgba(128, 128, 128, 0.029);"><img src="img/image.png"
+                    style="width: 70px;" alt="logo"> Jídelna Tlumačov</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 40px;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Domů</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="2.html">Jídelníček</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="3.html">O Nás</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="4.html">Stravné</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Přihlášení
+                        </a>
+                        <ul class="dropdown-menu p-4" style="width: 250px;">
+                            <h5 class="mb-3 text-center">Přihlášení</h5>
+                            <form action="">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="floatingInput"
+                                        placeholder="Uživatelské jméno">
+                                    <label for="floatingInput">Uživatelské jméno</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="floatingPassword"
+                                        placeholder="Heslo">
+                                    <label for="floatingPassword">Heslo</label>
+                                </div>
+                                <button type="submit" class="btn btn-secondary w-100">Přihlásit se</button>
+                            </form>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="p-3" style="background-color: rgba(128, 128, 128, 0.304); border: 1px solid black; border-radius: 15px;"><h1 class="text-center" style="font-weight: bold; margin-top: 13px;">Jídelníček</h1></div><br>
+        
+
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead class="table-dark">
+                    <tr style="font-weight: bold;">
+                        <th class="col-1">Datum</th>
+                        <th class="col-3">Polévka</th>
+                        <th class="col-5">Hlavní chod</th>
+                        <th class="col-1">Nápoje</th>
+                        <th class="col-1">Původ</th>
+                        <th class="col-1">Cena</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.9.2025</td>
+                        <td>Špenátová s kapáním</td>
+                        <td>Rizoto z kuřecího masa, Okurka</td>
+                        <td>Džus</td>
+                        <td><span class="fi fi-it"></span></td>
+                        <td>40 Kč</td>
+                    </tr>
+                    <tr>
+                        <td>2.9.2025</td>
+                        <td>Zeleninová</td>
+                        <td>Masové koule v rajské omáčce, špagety</td>
+                        <td>Džus</td>
+                        <td><span class="fi fi-cn"></span></td>
+                        <td>40 Kč</td>
+                    </tr>
+                    <tr>
+                        <td>3.9.2025</td>
+                        <td>Z červené čočky</td>
+                        <td>Kuřecí řizek přírodní, brambory smetanové, zeleninová obloha</td>
+                        <td>Džus</td>
+                        <td><span class="fi fi-it"></span></td>
+                        <td>40 Kč</td>
+                    </tr>
+                    <tr>
+                        <td>4.9.2025</td>
+                        <td>Gulášová</td>
+                        <td>Dukátové buchtičky s krémem, ovoce</td>
+                        <td>Čaj s citrónem</td>
+                        <td><span class="fi fi-fr"></span></td>
+                        <td>40 Kč</td>
+                    </tr>
+                    <tr>
+                        <td>5.9.2025</td>
+                        <td>Vývar z kostí s drožďovými knedlíčky</td>
+                        <td>Vepřové výpečky, zelí dušené, bramborové knedlíky (směs)</td>
+                        <td>Džus</td>
+                        <td><span class="fi fi-cz"></span></td>
+                        <td>40 Kč</td>
+                    </tr>
+                    <tr>
+                        <td>8.9.2025</td>
+                        <td>Krémová česneková</td>
+                        <td>Kuřecí kung-pao, dušená rýže</td>
+                        <td>Džus</td>
+                        <td><span class="fi fi-cn"></span></td>
+                        <td>40 Kč</td>
+                    </tr>
+                    <tr>
+                        <td>9.9.2025</td>
+                        <td>Bramborová</td>
+                        <td>Trhané maso, amercké brambory, zeleniny, dresink. Smetanový jogurt</td>
+                        <td>Čaj s citrónem</td>
+                        <td><span class="fi fi-us"></span></td>
+                        <td>40 Kč</td>
+                    </tr>
+                    <tr>
+                        <td>10.9.2025</td>
+                        <td>Hrachová</td>
+                        <td>Kuřecí prsa s rajčaty a sýrem, těstoviny</td>
+                        <td>Džus</td>
+                        <td><span class="fi fi-it"></span></td>
+                        <td>40 Kč</td>
+                    </tr>
+                    <tr>
+                        <td>11.9.2025</td>
+                        <td>Zelná</td>
+                        <td>Zeleninový salát, nakládaný sýr, pečivo</td>
+                        <td>Džus</td>
+                        <td><span class="fi fi-fr"></span></td>
+                        <td>40 Kč</td>
+                    </tr>
+                    <tr>
+                        <td>12.9.2025</td>
+                        <td>Drůbeží s těstovinou</td>
+                        <td>Špikovaná vepřová pečeně na česneku, šťouchaný brambor a sterilovaný okurek,
+                            ovoce</td>
+                        <td>Džus</td>
+                        <td><span class="fi fi-sk"></span></td>
+                        <td>40 Kč</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p style="margin-top: -15px; font-size: x-small;">Můžete si zobrazit pouze 10 jídel dopředu.</p>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

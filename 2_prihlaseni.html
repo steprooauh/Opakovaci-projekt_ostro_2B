@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 
 <head>
     <meta charset="UTF-8">
@@ -30,14 +30,16 @@
             text-align: center;
         }
     </style>
+
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"
-                style="font-weight: bold; background-color: rgba(128, 128, 128, 0.029);"><img src="img/image.png"
-                    style="width: 70px;" alt="logo"> Jídelna Tlumačov</a>
+                style="font-weight: bold; background-color: rgba(128, 128, 128, 0.029);">
+                <img src="img/image.png" style="width: 70px;" alt="logo"> Jídelna Tlumačov
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -45,56 +47,32 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 40px;">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Domů</a>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Domů</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="2.html">Jídelníček</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="2.html">Jídelníček</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="3.html">O Nás</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="4.html">Náš tým</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Přihlášení
-                        </a>
-                        <ul class="dropdown-menu p-4" style="width: 250px;">
-                            <h5 class="mb-3 text-center">Přihlášení</h5>
-                            <form action="2_prihlaseni.html">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="Uživatelské jméno" required>
-                                    <label for="floatingInput">Uživatelské jméno</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <input type="password" class="form-control" id="floatingPassword"
-                                        placeholder="Heslo" required>
-                                    <label for="floatingPassword">Heslo</label>
-                                </div>
-                                <button type="submit" class="btn btn-secondary w-100">Přihlásit se</button>
-                            </form>
-                        </ul>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="3.html">O Nás</a></li>
+                    <li class="nav-item"><a class="nav-link" href="4.html">Náš tým</a></li>
                 </ul>
+                <div class="d-flex flex-column align-items-end me-3">
+                    <span>Přihlášen jako: <strong>ANNA HRUBÁ</strong></span>
+                    <span id="kredit">Kredit: 500 Kč</span>
+                </div>
+
             </div>
         </div>
     </nav>
 
     <div class="container">
-        <div class="p-3"
+        <div class="p-3 mb-3"
             style="background-color: rgba(128, 128, 128, 0.304); border: 1px solid black; border-radius: 15px;">
             <h1 class="text-center" style="font-weight: bold; margin-top: 13px;">Jídelníček</h1>
-        </div><br>
-
+        </div>
 
         <table class="table table-striped table-bordered align-middle p-2">
             <thead class="table-dark">
                 <tr style="font-weight: bold;">
-                    <th style="width: 14%;">Datum</th>
+                    <th style="width: 2%;">Vybrat</th>
+                    <th style="width: 12%;">Datum</th>
                     <th style="width: 20%;">Polévka</th>
                     <th style="width: 38%;">Hlavní chod</th>
                     <th style="width: 10%;">Nápoje</th>
@@ -104,7 +82,7 @@
             </thead>
             <tbody>
                 <tr>
-                    
+                    <td><input type="checkbox" class="form-check-input obed"></td>
                     <td style="white-space: normal;">1.9.2025</td>
                     <td style="white-space: normal;">Špenátová s kapáním</td>
                     <td style="white-space: normal;">Rizoto z kuřecího masa, okurka</td>
@@ -113,7 +91,7 @@
                     <td>40 Kč</td>
                 </tr>
                 <tr>
-                    
+                    <td><input type="checkbox" class="form-check-input obed"></td>
                     <td style="white-space: normal;">2.9.2025</td>
                     <td style="white-space: normal;">Zeleninová</td>
                     <td style="white-space: normal;">Masové koule v rajské omáčce, špagety</td>
@@ -122,7 +100,7 @@
                     <td>40 Kč</td>
                 </tr>
                 <tr>
-                    
+                    <td><input type="checkbox" class="form-check-input obed"></td>
                     <td style="white-space: normal;">3.9.2025</td>
                     <td style="white-space: normal;">Z červené čočky</td>
                     <td style="white-space: normal;">Kuřecí řizek přírodní, brambory smetanové, zeleninová obloha</td>
@@ -131,7 +109,7 @@
                     <td>40 Kč</td>
                 </tr>
                 <tr>
-                    
+                    <td><input type="checkbox" class="form-check-input obed"></td>
                     <td style="white-space: normal;">4.9.2025</td>
                     <td style="white-space: normal;">Gulášová</td>
                     <td style="white-space: normal;">Dukátové buchtičky s krémem, ovoce</td>
@@ -140,7 +118,7 @@
                     <td>40 Kč</td>
                 </tr>
                 <tr>
-                    
+                    <td><input type="checkbox" class="form-check-input obed"></td>
                     <td style="white-space: normal;">5.9.2025</td>
                     <td style="white-space: normal;">Vývar z kostí s drožďovými knedlíčky</td>
                     <td style="white-space: normal;">Vepřové výpečky, zelí dušené, bramborové knedlíky (směs)</td>
@@ -149,7 +127,7 @@
                     <td>40 Kč</td>
                 </tr>
                 <tr>
-                    
+                    <td><input type="checkbox" class="form-check-input obed"></td>
                     <td style="white-space: normal;">8.9.2025</td>
                     <td style="white-space: normal;">Krémová česneková</td>
                     <td style="white-space: normal;">Kuřecí kung-pao, dušená rýže</td>
@@ -158,7 +136,7 @@
                     <td>40 Kč</td>
                 </tr>
                 <tr>
-                    
+                    <td><input type="checkbox" class="form-check-input obed"></td>
                     <td style="white-space: normal;">9.9.2025</td>
                     <td style="white-space: normal;">Bramborová</td>
                     <td style="white-space: normal;">Trhané maso, americké brambory, zelenina, dresink, smetanový jogurt
@@ -168,7 +146,7 @@
                     <td>40 Kč</td>
                 </tr>
                 <tr>
-                    
+                    <td><input type="checkbox" class="form-check-input obed"></td>
                     <td style="white-space: normal;">10.9.2025</td>
                     <td style="white-space: normal;">Hrachová</td>
                     <td style="white-space: normal;">Kuřecí prsa s rajčaty a sýrem, těstoviny</td>
@@ -177,7 +155,7 @@
                     <td>40 Kč</td>
                 </tr>
                 <tr>
-                    
+                    <td><input type="checkbox" class="form-check-input obed"></td>
                     <td style="white-space: normal;">11.9.2025</td>
                     <td style="white-space: normal;">Zelná</td>
                     <td style="white-space: normal;">Zeleninový salát, nakládaný sýr, pečivo</td>
@@ -186,7 +164,7 @@
                     <td>40 Kč</td>
                 </tr>
                 <tr>
-                    
+                    <td><input type="checkbox" class="form-check-input obed"></td>
                     <td style="white-space: normal;">12.9.2025</td>
                     <td style="white-space: normal;">Drůbeží s těstovinou</td>
                     <td style="white-space: normal;">Špikovaná vepřová pečeně na česneku, šťouchaný brambor a
@@ -197,10 +175,38 @@
                 </tr>
             </tbody>
         </table>
+
         <p style="margin-top: -15px; font-size: x-small;">Můžete si zobrazit pouze 10 jídel dopředu.</p>
+    </div>
+    <div class="text-center">
+        <button class="btn btn-secondary px-4" onclick="ulozit()">Uložit</button>
+    </div>
     </div>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let kredit = 500;
+        const cena = 40;
+        const kreditEl = document.getElementById("kredit");
+
+        document.querySelectorAll(".obed").forEach(chk => {
+            chk.addEventListener("change", function () {
+                if (this.checked) {
+                    kredit -= cena;
+                    this.closest("tr").classList.add("table-success");
+                } else {
+                    kredit += cena;
+                    this.closest("tr").classList.remove("table-success");
+                }
+                kreditEl.textContent = "Kredit: " + kredit + " Kč";
+            });
+        });
+
+        function ulozit() {
+            alert("Obědy úspěšně uloženy! Přejeme dobrou chuť!");
+            window.location.href = "index.html";
+        }
+    </script>
 </body>
 
 </html>

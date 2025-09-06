@@ -10,6 +10,26 @@
     <link rel="stylesheet" href="node_modules/flag-icons/css/flag-icons.min.css">
     <title>Jídelna Tlumačov</title>
     <link rel="icon" href="img/image.png">
+    <style>
+        .card {
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        .nadpis {
+            background-color: rgba(128, 128, 128, 0.304);
+            border: 1px solid black;
+            border-radius: 15px;
+            transition: background-color 0.5s ease;
+        }
+
+        .nadpis:hover{
+            background-color: rgba(179, 255, 0, 0.493);
+        }
+    </style>
 </head>
 
 <body>
@@ -37,7 +57,7 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="4.html">Náš tým</a>
                     </li>
-                   <li class="nav-item dropdown">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Přihlášení
@@ -66,7 +86,9 @@
 
     <div class="container">
         <div class="p-4">
-            <h1 class="mb-4 text-center" style="font-weight: bold; font-size: 80px;">Náš tým</h1>
+            <div class="p-3 nadpis">
+                <h1 class="text-center" style="font-weight: bold; margin-top: 13px;">Náš tým</h1>
+            </div><br>
             <div class="row g-4">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">

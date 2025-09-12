@@ -11,9 +11,10 @@
     <title>Jídelna Tlumačov</title>
     <link rel="icon" href="img/image.png">
     <style>
-        h1{
+        h1 {
             text-shadow: 10px 10px 5px rgba(121, 121, 121, 0.295);
         }
+
         .nadpis {
             background-color: rgba(128, 128, 128, 0.308);
             border: 1px solid black;
@@ -32,6 +33,28 @@
         .nadpis:hover .nadpis-obrazek {
             transform: rotate(360deg);
         }
+
+        .responzivnost1 {
+            font-size: clamp(41px, 8vw, 80px);
+        }
+
+        @media (max-width: 767px) {
+            .responzivnost2 {
+                width: 250px;
+            }
+
+            @media (max-width: 435px) {
+            .responzivnost1 {
+                font-size: 25px;
+            }
+
+            .responzivnost2 {
+                width: 100px;
+            }
+        }
+        }
+
+        
     </style>
 </head>
 
@@ -96,8 +119,8 @@
 
             <div class="p-3 mb-4 rounded nadpis">
                 <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
-                    <img src="img/image.png" alt="logo" class="nadpis-obrazek">
-                    <h1 class="fw-bold ms-md-3" style="font-size: clamp(32px, 60px, 80px);">
+                    <img src="img/image.png" alt="logo" class="nadpis-obrazek responzivnost2">
+                    <h1 class="fw-bold ms-md-3 responzivnost1">
                         JÍDELNA TLUMAČOV
                     </h1>
                 </div>

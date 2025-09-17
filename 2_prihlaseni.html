@@ -11,7 +11,7 @@
     <title>Jídelna Tlumačov</title>
     <link rel="icon" href="img/image.png">
     <style>
-        @media (max-width: 575.98px) {
+        @media (max-width: 600px) {
 
             table th,
             table td {
@@ -51,16 +51,11 @@
         }
 
         .nadpis:hover {
-            background-color: rgba(99, 73, 248, 0.637);
+            background-color: rgba(112, 109, 133, 0.247);
         }
 
         td {
             background-color: none;
-            transition: background-color 0.25s ease;
-        }
-
-        td:hover {
-            background-color: rgba(133, 133, 133, 0.295);
         }
 
         .table-responsive {
@@ -93,7 +88,7 @@
                 </ul>
                 <div class="d-flex flex-column align-items-end me-3">
                     <span>Přihlášen jako: <strong>Anonymní uživatel</strong></span>
-                    <span id="kredit">Kredit: 500 Kč</span>
+                    <span id="kredit">Kredit: 380 Kč</span>
                 </div>
 
             </div>
@@ -105,124 +100,166 @@
             <h1 class="text-center" style="font-weight: bold; margin-top: 13px;">Rezervace jídel</h1>
         </div>
 
-        <table class="table table-striped table-bordered align-middle p-2">
-            <thead class="table-dark">
-                <tr style="font-weight: bold;">
-                    <th style="width: 2%;">Vybrat</th>
-                    <th style="width: 12%;">Datum</th>
-                    <th style="width: 20%;">Polévka</th>
-                    <th style="width: 33%;">Hlavní chod</th>
-                    <th style="width: 10%;">Nápoje</th>
-                    <th class="width: 4%">Původ</th>
-                    <th style="width: 19%;">Cena</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><input type="checkbox" class="form-check-input obed"></td>
-                    <td>1.9.2025</td>
-                    <td>Špenátová s kapáním</td>
-                    <td>Rizoto z kuřecího masa, okurka</td>
-                    <td>Džus</td>
-                    <td><span class="fi fi-it"></span></td>
-                    <td>40 Kč</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" class="form-check-input obed"></td>
-                    <td>2.9.2025</td>
-                    <td>Zeleninová</td>
-                    <td>Masové koule v rajské omáčce, špagety</td>
-                    <td>Džus</td>
-                    <td><span class="fi fi-cn"></span></td>
-                    <td>40 Kč</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" class="form-check-input obed"></td>
-                    <td>3.9.2025</td>
-                    <td>Z červené čočky</td>
-                    <td>Kuřecí řizek přírodní, brambory smetanové, zeleninová obloha</td>
-                    <td>Džus</td>
-                    <td><span class="fi fi-it"></span></td>
-                    <td>40 Kč</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" class="form-check-input obed"></td>
-                    <td>4.9.2025</td>
-                    <td>Gulášová</td>
-                    <td>Dukátové buchtičky s krémem, ovoce</td>
-                    <td>Čaj</td>
-                    <td><span class="fi fi-fr"></span></td>
-                    <td>40 Kč</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" class="form-check-input obed"></td>
-                    <td>5.9.2025</td>
-                    <td>Vývar z kostí s drožďovými knedlíčky</td>
-                    <td>Vepřové výpečky, zelí dušené, bramborové knedlíky (směs)</td>
-                    <td>Džus</td>
-                    <td><span class="fi fi-cz"></span></td>
-                    <td>40 Kč</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" class="form-check-input obed"></td>
-                    <td>8.9.2025</td>
-                    <td>Krémová česneková</td>
-                    <td>Kuřecí kung-pao, dušená rýže</td>
-                    <td>Džus</td>
-                    <td><span class="fi fi-cn"></span></td>
-                    <td>40 Kč</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" class="form-check-input obed"></td>
-                    <td>9.9.2025</td>
-                    <td>Bramborová</td>
-                    <td>Trhané maso, americké brambory, zelenina, dresink, smetanový jogurt
-                    </td>
-                    <td>Čaj</td>
-                    <td><span class="fi fi-us"></span></td>
-                    <td>40 Kč</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" class="form-check-input obed"></td>
-                    <td>10.9.2025</td>
-                    <td>Hrachová</td>
-                    <td>Kuřecí prsa s rajčaty a sýrem, těstoviny</td>
-                    <td>Džus</td>
-                    <td><span class="fi fi-it"></span></td>
-                    <td>40 Kč</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" class="form-check-input obed"></td>
-                    <td>11.9.2025</td>
-                    <td>Zelná</td>
-                    <td>Zeleninový salát, nakládaný sýr, pečivo</td>
-                    <td>Džus</td>
-                    <td><span class="fi fi-fr"></span></td>
-                    <td>40 Kč</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" class="form-check-input obed"></td>
-                    <td>12.9.2025</td>
-                    <td>Drůbeží s těstovinou</td>
-                    <td>Špikovaná vepřová pečeně na česneku, šťouchaný brambor a
-                        sterilovaný okurek, ovoce</td>
-                    <td>Džus</td>
-                    <td><span class="fi fi-sk"></span></td>
-                    <td>40 Kč</td>
-                </tr>
-            </tbody>
-        </table>
 
-        <p style="margin-top: -15px; font-size: x-small;">Můžete si zobrazit pouze 10 jídel dopředu.</p>
-    </div>
-    <div class="text-center">
-        <button class="btn btn-secondary px-4" onclick="ulozit()">Uložit</button>
-    </div>
+        <div style="margin-left: -10px;">
+            <table class="table table-striped table-bordered align-middle p-2">
+                <thead class="table-dark">
+                    <tr style="font-weight: bold;">
+                        <th style="width: 2%;">Vybrat</th>
+                        <th style="width: 12%;">Datum</th>
+                        <th style="width: 20%;">Polévka</th>
+                        <th style="width: 32%;">Hlavní chod</th>
+                        <th style="width: 10%;">Nápoje</th>
+                        <th class="width: 4%">Původ</th>
+                        <th style="width: 19%;">Cena</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-info">
+                        <td><input type="checkbox" class="form-check-input obed" disabled checked> <i
+                                class="fa-solid fa-check-double" style="color: #0011ad;"></i></td>
+                        <td>15.9.2025</td>
+                        <td>Špenátová s kapáním</td>
+                        <td>Rizoto z kuřecího masa, okurka</td>
+                        <td>Džus</td>
+                        <td><span class="fi fi-it"></span></td>
+                        <td>40 Kč</td>
+                    </tr>
+                    <tr class="table-warning">
+                        <td><input type="checkbox" class="form-check-input obed" disabled> <i
+                                class="fa-solid fa-xmark fa-lg" style="color: #c28400;"></i></td>
+                        <td>16.9.2025</td>
+                        <td>Zeleninová</td>
+                        <td>Masové koule v rajské omáčce, špagety</td>
+                        <td>Džus</td>
+                        <td><span class="fi fi-cn"></span></td>
+                        <td>40 Kč</td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td><input type="checkbox" class="form-check-input obed" disabled checked> <i
+                                class="fa-solid fa-triangle-exclamation fa-lg" style="color: #920202;"></i></td>
+                        <td>17.9.2025</td>
+                        <td>Z červené čočky</td>
+                        <td>Kuřecí řizek přírodní, brambory smetanové, zeleninová obloha</td>
+                        <td>Džus</td>
+                        <td><span class="fi fi-it"></span></td>
+                        <td>40 Kč</td>
+                    </tr>
+                    <tr class="table-info">
+                        <td><input type="checkbox" class="form-check-input obed" disabled checked> <i
+                                class="fa-solid fa-check-double" style="color: #0011ad;"></i></td>
+                        <td>18.9.2025</td>
+                        <td>Gulášová</td>
+                        <td>Dukátové buchtičky s krémem, ovoce</td>
+                        <td>Čaj</td>
+                        <td><span class="fi fi-fr"></span></td>
+                        <td>40 Kč</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="form-check-input obed"></td>
+                        <td>19.9.2025</td>
+                        <td>Vývar z kostí s drožďovými knedlíčky</td>
+                        <td>Vepřové výpečky, zelí dušené, bramborové knedlíky (směs)</td>
+                        <td>Džus</td>
+                        <td><span class="fi fi-cz"></span></td>
+                        <td>40 Kč</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="form-check-input obed"></td>
+                        <td>22.9.2025</td>
+                        <td>Krémová česneková</td>
+                        <td>Kuřecí kung-pao, dušená rýže</td>
+                        <td>Džus</td>
+                        <td><span class="fi fi-cn"></span></td>
+                        <td>40 Kč</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="form-check-input obed"></td>
+                        <td>23.9.2025</td>
+                        <td>Bramborová</td>
+                        <td>Trhané maso, americké brambory, zelenina, dresink, smetanový jogurt
+                        </td>
+                        <td>Čaj</td>
+                        <td><span class="fi fi-us"></span></td>
+                        <td>40 Kč</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="form-check-input obed"></td>
+                        <td>24.9.2025</td>
+                        <td>Hrachová</td>
+                        <td>Kuřecí prsa s rajčaty a sýrem, těstoviny</td>
+                        <td>Džus</td>
+                        <td><span class="fi fi-it"></span></td>
+                        <td>40 Kč</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="form-check-input obed"></td>
+                        <td>25.9.2025</td>
+                        <td>Zelná</td>
+                        <td>Zeleninový salát, nakládaný sýr, pečivo</td>
+                        <td>Džus</td>
+                        <td><span class="fi fi-fr"></span></td>
+                        <td>40 Kč</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="form-check-input obed"></td>
+                        <td>26.9.2025</td>
+                        <td>Drůbeží s těstovinou</td>
+                        <td>Špikovaná vepřová pečeně na česneku, šťouchaný brambor a
+                            sterilovaný okurek, ovoce</td>
+                        <td>Džus</td>
+                        <td><span class="fi fi-sk"></span></td>
+                        <td>40 Kč</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="margin-top: -15px; font-size: x-small;">Můžete si zobrazit pouze 10 jídel dopředu.</p>
+
+            <div class="text-center">
+                <button class="btn btn-secondary px-4" onclick="ulozit()">Uložit</button>
+            </div><br>
+
+            <div class="card p-3">
+                <h5>Legenda</h5>
+                <table class="table table-striped table-bordered">
+                    <thead class="table-dark">
+                        <tr style="font-weight: bold;">
+                            <th style="width: 15%;">Barva</th>
+                            <th style="width: 85%;">Popisek</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>Není objednané žádné jídlo</td>
+                        </tr>
+                        <tr>
+                            <td class="table-success"></td>
+                            <td>Na tento den je objednané jídlo</td>
+                        </tr>
+                        <tr>
+                            <td class="table-info"><i class="fa-solid fa-check-double" style="color: #0011ad;"></i></td>
+                            <td>Toto jídlo již bylo vydáno</td>
+                        </tr>
+                        <tr>
+                            <td class="table-warning"></td>
+                            <td>Toto jídlo nebylo objednáno. Čas lhůty objednání vypršel</td>
+                        </tr>
+                        <tr>
+                            <td class="table-danger"><i class="fa-solid fa-triangle-exclamation fa-lg"
+                                    style="color: #920202;"></i></td>
+                            <td>Toto jídlo bylo objednané, ale nikdo si ho nevyzvedl.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div><br>
     </div>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        let kredit = 500;
+        let kredit = 380;
         const cena = 40;
         const kreditEl = document.getElementById("kredit");
 
